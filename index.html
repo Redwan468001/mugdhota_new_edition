@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/flexslider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/flexslider.css" type="text/css" media="screen">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cmn-style.css">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+
     <title>Mugdhota</title>
 </head>
 <body>
@@ -47,7 +52,7 @@
 
         </div>
 
-         <!-- Main Menu -->
+        <!-- Main Menu -->
 
         <div class="container_nav">
             <div class="container">
@@ -343,11 +348,71 @@
     
    
     <!-- Slider -->
-    
-    <div class="container_full">
-        <div class="container">
 
+    <div class="container_full">
+
+        <!-- Slider -->
+        <div class="slider_container">
+            <div class="slider_section">
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="simg/img1.jpg" alt="Slide 1">
+                    </div>
+                    <div class="slide_cnt">
+                        <div class="slide_content">
+                            <h5>Editor's picks</h5>
+                            <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                            <p>Music - Feb 18</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="simg/img2.jpg" alt="Slide 2">
+                    </div>
+                    <div class="slide_cnt">
+                        <div class="slide_content">
+                            <h5>Editor's picks</h5>
+                            <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                            <p>Music - Feb 18</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="simg/img3.jpg" alt="Slide 3">
+                    </div>
+                    <div class="slide_cnt">
+                        <div class="slide_content">
+                            <h5>Editor's picks</h5>
+                            <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                            <p>Music - Feb 18</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="simg/img4.jpeg" alt="Slide 4">
+                    </div>
+                    <div class="slide_cnt">
+                        <div class="slide_content">
+                            <h5>Editor's picks</h5>
+                            <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+                            <p>Music - Feb 18</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_controler">
+                <button class="slide_prev"><i class="material-icons">arrow_back</i></button>
+                <button class="slide_next"><i class="material-icons">arrow_forward</i></button>
+            </div>
         </div>
+
     </div>
 
     <!-- End Slider -->
@@ -368,6 +433,7 @@
                                     <li class="cnt_index">Entertainment</li>
                                     <li><a href="#item1" class="active_cnt_nav">Law</a></li>
                                     <li><a href="#item2">Medical</a></li>
+                                    <li class="cnt_view_all"><a href="">View all <i class="fa fa-caret-right"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -378,71 +444,116 @@
                             <!-- Overview item 1 -->
                             <div class="mugdhota_cnts_section msmcs_section" id="item1">
 
-                                <div class="mugdhota_cnts_left">
+                                <div class="mugdhota_cnts_left pd_r_20">
                                     <div class="mugdhota_cnts_left_section">
                                         <div class="sng_mugdhota_cnts">
-                                            <div class="smc_img">
+                                            <div class="smcl_img">
                                                 <img src="simg/img1.jpg" alt="">
                                             </div>
                                             <div class="smc_cnt">
-                                                <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                                                <h3 style="padding-top: 10px;">The standard Lorem Ipsum, used since the 1500s</h3>
                                                 <p>Music - Feb 18</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="mugdhota_cnts_right">
+                                <div class="mugdhota_cnts_right pd_l_20">
                                     <div class="mugdhota_cnts_right_section">
+                                        
                                         <div class="sng_mugdhota_cnts_right">
                                             <div class="smcr_img">
-                                                <img src="simg/img1.jpg" alt="">
+                                                <img src="simg/img2.jpg" alt="">
                                             </div>
-                                            <div class="smcr_cnt">
+                                            <div class="smcr_cnt pd_l_10 res_no_pd">
                                                 <h3>The standard Lorem Ipsum, used since the 1500s</h3>
                                                 <p>Music - Feb 18</p>
                                             </div>
                                         </div>
+                                        
+                                        
+                                        <div class="sng_mugdhota_cnts_right">
+                                            <div class="smcr_img">
+                                                <img src="simg/img3.jpg" alt="">
+                                            </div>
+                                            <div class="smcr_cnt pd_l_10 res_no_pd">
+                                                <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                                                <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="sng_mugdhota_cnts_right">
+                                            <div class="smcr_img">
+                                                <img src="simg/img4.jpeg" alt="">
+                                            </div>
+                                            <div class="smcr_cnt pd_l_10 res_no_pd">
+                                                <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                                                <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
 
                             </div>
                             <!-- End Overview item 1 -->
                             
-
-                            <!-- Overview item 1 -->
+                            <!-- Overview item 2 -->
                             <div class="mugdhota_cnts_section msmcs_section" id="item2">
 
-                                <div class="mugdhota_cnts_left">
+                                <div class="mugdhota_cnts_left pd_r_20">
                                     <div class="mugdhota_cnts_left_section">
                                         <div class="sng_mugdhota_cnts">
-                                            <div class="smc_img">
-                                                <img src="simg/img2.jpg" alt="">
+                                            <div class="smcl_img">
+                                                <img src="simg/img4.jpeg" alt="">
                                             </div>
                                             <div class="smc_cnt">
-                                                <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                                                <h3 style="padding-top: 10px;">The standard Lorem Ipsum, used since the 1500s</h3>
                                                 <p>Music - Feb 18</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="mugdhota_cnts_right">
+                                <div class="mugdhota_cnts_right pd_l_20">
                                     <div class="mugdhota_cnts_right_section">
+                                        
                                         <div class="sng_mugdhota_cnts_right">
                                             <div class="smcr_img">
                                                 <img src="simg/img3.jpg" alt="">
                                             </div>
-                                            <div class="smcr_cnt">
+                                            <div class="smcr_cnt pd_l_10 res_no_pd">
                                                 <h3>The standard Lorem Ipsum, used since the 1500s</h3>
                                                 <p>Music - Feb 18</p>
                                             </div>
                                         </div>
+                                        
+                                        
+                                        <div class="sng_mugdhota_cnts_right">
+                                            <div class="smcr_img">
+                                                <img src="simg/img2.jpg" alt="">
+                                            </div>
+                                            <div class="smcr_cnt pd_l_10 res_no_pd">
+                                                <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                                                <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="sng_mugdhota_cnts_right">
+                                            <div class="smcr_img">
+                                                <img src="simg/img1.jpg" alt="">
+                                            </div>
+                                            <div class="smcr_cnt pd_l_10 res_no_pd">
+                                                <h3>The standard Lorem Ipsum, used since the 1500s</h3>
+                                                <p>Music - Feb 18</p>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
 
                             </div>
-                            <!-- End Overview item 1 -->
+                            <!-- End Overview item 2 -->
                             
                         </div>
                         
@@ -461,57 +572,38 @@
         </div>
     </div>
 
-    <!-- End Content secction style 1 -->
 
+    <script src="assets/js/script.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <!-- Slick Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Slider Js -->
     <script>
 
-        // Function to initializw an overview navigation menu
-        function initializeOverviewNav(navSelector, sectionSelector) {
-            const navLinks = document.querySelectorAll(`${navSelector} a`);
-            const sections = document.querySelectorAll(sectionSelector);
-
-            // Function to show the active section
-            function setActiveSection(activeId) {
-                sections.forEach((section) => {
-                    if (section.id === activeId) {
-                        section.classList.add("active");
-                    } else {
-                        section.classList.remove("active");
-                    }
-                }); 
-            }
-
-            // Add active class to link
-            navLinks.forEach((link) => {
-                link.addEventListener("click", (event) => {
-                    // Remove the 'active' class from all links
-                    navLinks.forEach((nav) => nav.classList.remove("active_nav"));
-                    // Add the 'active' class to the clicked link
-                    link.classList.add("active_nav");
-                });
-            });
-        
-
-            // Add click listeners to navigation links
-            navLinks.forEach((link) => {
-                link.addEventListener("click", (event) => {
-                    event.preventDefault();
-                    const targetId = link.getAttribute("href").substring(1);
-                    setActiveSection(targetId);
-                });
+        $(document).ready(function () {
+            $('.slider_section').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false, // Disable default arrows
+                autoplay: true,
+                autoplaySpeed: 3000,
+                fade: false, 
+                infinity: true,
+                cssEase: 'ease-in-out',
             });
 
-            // Show the first section by default
-            if (sections.length > 0) {
-                setActiveSection(sections[0].id);
-            }
-        }
+            // Custom buttons
+            $('.slide_prev').click(function () {
+                $('.slick-slider').slick('slickPrev');
+            });
 
-        // Initialize multiple navigation menus
-        initializeOverviewNav(".overview_nav_1", ".content1 .msmcs_section");
-        initializeOverviewNav(".overview_nav_2", ".content2 .msmcs_section");
-        initializeOverviewNav(".content_nav_1", ".m_content1 .msmcs_section");
+            $('.slide_next').click(function () {
+                $('.slick-slider').slick('slickNext');
+            });
+        });
 
     </script>
 

@@ -16,7 +16,7 @@ ul{margin:0}
 li{list-style:none;padding:0 5px;}
 a{text-decoration:none;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';color:black;}
 h2{font-size:19px;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
-h3{font-size:18px;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
+h3{font-size:18px;line-height: 1.3;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
 p{font-size:17px;font-weight:normal;line-height:1.4;color:black;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';}
 a:hover{text-decoration: none;}
 img{width:100%;height: auto;display:block;text-indent: -9999px !important;}
@@ -155,7 +155,9 @@ h2:hover{
     position: absolute;
     width: 100%;
     left: -99999px;
+    background-color: #fff;
     box-shadow: 1px 5px 5px 1px #ddd;
+    z-index: 9999999;
 }
 .mugdhota_main_manu_items:hover #mugdhota_sub_menu{
     left: 0;
@@ -217,7 +219,7 @@ h2:hover{
 .msmcs_section{
     display: none;
 }
-.msmcs_section.active {
+.msmcs_section.active_ov {
     display: block;
 }
 
@@ -247,17 +249,34 @@ h2:hover{
 .mugdhota_content_nav{
     display: block;
     overflow: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-left: 4px solid rgb(4, 188, 4);
+    margin-bottom: 30px;
+}
+.cnt_index{
+    padding: 5px 15px 5px 5px;
+    color: rgb(4, 188, 4);
+    font-weight: bold;
+    font-size: 18px;
 }
 .mugdhota_content_nav>ul>li{
     float: left;
 }
-.cnt_index{
-    padding: 5px;
-}
 .mugdhota_content_nav>ul>li>a{
     display: block;
-    padding: 5px 15px;
+    font-size: 17px;
+    padding: 5px 10px;
     color: black;
+}
+.mugdhota_content_nav>ul>li>a:hover{
+    color: rgb(4, 188, 4);
+}
+.cnt_view_all{
+    float: right !important;
+}
+.active_cnt_nav{
+    color: rgb(4, 188, 4) !important;
 }
 
 .mugdhota_cnts_left{
@@ -268,13 +287,92 @@ h2:hover{
     width: 50%;
     float: left;
 }
-.mugdhota_cnts_left_section{
-    margin-right: 20px;
+.sng_mugdhota_cnts_right{
+    align-items: flex-start;
+    margin-bottom: 15px;
 }
-.mugdhota_cnts_right_section{
-    margin-left: 20px;
+
+.smcl_img>img{
+    width: 100%;
+    height: 215px;
+}
+
+.smcr_img{
+    width: 100px;
+    float: left;
+}
+.smcr_img img{
+    width: 100px;
+    height: 70px;
+}
+.smcr_cnt{
+    width: calc(100% - 100px);
+    display: inline-block;
+}
+.smcr_cnt h3{
+    font-weight: normal;
+}
+.smcr_cnt p{
+    font-size: 15px;
+    color: #7d7c7c;
 }
 
 /* 
     Content Section Style 'Overview'
+*/
+
+/* 
+    Slider
+*/
+
+.slider_container {
+    position: relative;
+    margin: 0 auto;
+}
+.slider_section{
+    width: 1050px;
+    margin: 0 auto;
+}
+.slider_section .slide_img, .slide_cnt{
+    width: 50%;
+    float: left;
+}
+.slider_section .slide img {
+    width: 100%;
+    height: 320px;
+    display: block;
+}
+.slide_content{
+    height: 320px;
+    padding: 45px 40px;
+    background-color: #ededed;
+}
+
+button.slide_prev,
+button.slide_next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+button.slide_prev i,
+button.slide_next i{
+    font-size: 25px;
+    color: black;
+}
+button.slide_prev {
+    left: 10px;
+}
+button.slide_next {
+    right: 10px;
+}
+
+
+/* 
+   End Slider
 */
