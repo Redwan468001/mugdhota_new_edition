@@ -1,0 +1,280 @@
+/**
+    Theme Name: Mugdhota
+    Author: Redwan
+    Email: redwanshuvo1@gmail.com
+    Website: resoftek.com
+    Version: 4.1.5
+**/
+
+@import url('https://fonts.maateen.me/bangla/font.css');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+
+*{margin:0;padding:0}
+ul{margin:0}
+li{list-style:none;padding:0 5px;}
+a{text-decoration:none;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';color:black;}
+h2{font-size:19px;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
+h3{font-size:18px;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
+p{font-size:17px;font-weight:normal;line-height:1.4;color:black;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';}
+a:hover{text-decoration: none;}
+img{width:100%;height: auto;display:block;text-indent: -9999px !important;}
+.left{float:left !important}
+.right{float:right !important}
+.h2s h2{margin:10px 0 15px 0}
+.no_pad{padding:0 !important}
+.no_mrg{margin:0 !important}
+.img_ha img{height:auto !important}
+.abh_description{font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';color:black;}
+input, button, select, textarea {
+  font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';font-size: inherit; line-height: inherit; padding: 5px;
+}
+.google-auto-placed{
+    margin: 10px 0;
+    padding: 5px;
+    display: inline-table;
+}
+
+body{
+	font-family: SolaimanLipi, Bangla, Baloo Da 2, georgian, Arial, Vrinda, FallbackBengaliFont, Helvetica, sans-serif !important;
+	color: black;
+}
+
+.container_full{
+    padding:20px 0 30px 0;
+	overflow: auto;
+}
+.container{
+	width: 1050px;
+    padding: 0;
+}
+
+h2:hover{
+    color: blue;
+}
+
+/* Header Section */
+
+#header{
+    overflow: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Header left */
+.mugdhota_web_info_left{
+    width: 20%;
+    float: left;
+}
+
+/* Header Middle */
+.mugdhota_web_info_middle{
+    width: 60%;
+    float: left;
+    padding: 0 20px;
+}
+.mugdhota_web_info_middle .main_search{
+    padding: 2.5% 0 0 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.mugdhota_web_info_middle .main_search input[type=search]{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+}
+.mugdhota_web_info_middle .main_search button[type=submit]{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 15%;
+}
+
+
+/* Header Right */
+.mugdhota_web_info_right{
+    width: 20%;
+    float: left;
+}
+.mugdhota_web_info_right a{
+    display: inline-flex;
+}
+.mugdhota_web_info_right span{
+    margin: 3px 8px 5px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+.mugdhota_web_info_right i{
+    margin-right: 5px;
+    font-size: 30px;
+}
+.mugdhota_web_info_right .user_info{
+    padding: 17px 0 0 0;
+    text-align: right;
+}
+
+
+/* Main Manu Section */
+
+.mugdhota_top_nav{
+    display: flex;
+    position: relative;
+}
+.mugdhota_top_nav>ul>li{
+    float: left;
+    position: static;
+    height: 100%;
+    padding: 0;
+}
+.mugdhota_top_nav>ul>li>a{
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    position: relative;
+    border-bottom: 5px solid #fff;
+    transition: all .3s;
+    -webkit-transition: all .3s linear;
+}
+
+.mugdhota_top_nav>ul>li>a:hover{
+    border-bottom: 5px solid #ddd;
+}
+.material-icons{
+    font-size: 20px;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+
+.mugdhota_main_manu_items{
+    position: relative;
+}
+
+#mugdhota_sub_menu{
+    position: absolute;
+    width: 100%;
+    left: -99999px;
+    box-shadow: 1px 5px 5px 1px #ddd;
+}
+.mugdhota_main_manu_items:hover #mugdhota_sub_menu{
+    left: 0;
+}
+.mugdhota_sub_menu_section{
+    overflow: auto;
+    padding: 15px 0;
+}
+.mugdhota_sub_menu_section .mugdhota_sub_menu_items_section{
+    width: 25%;
+    float: left;
+}
+
+.mugdhota_sub_menu_section .mugdhota_sub_menu_cnts_section{
+    width: 75%;
+    float: left;
+}
+.mugdhota_sub_menu_items ul li a{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 20px;
+    color: black;
+}
+.mugdhota_sub_menu_items ul li a:hover{
+    background-color: #17b978;
+    color: #fff;
+}
+.active_nav{
+    background-color: #17b978;
+    color: #fff;
+}
+.mugdhota_sub_menu_cnts_section{
+    padding: 0 15px;
+}
+.mugdhota_sub_menu_cnts{
+    width: 25%;
+    float: left;
+}
+.mugdhota_sub_menu_cnts>.sng_mugdhota_sub_menu_cnts{
+    padding: 0 12px;
+}
+.sng_mugdhota_sub_menu_cnts>.msmc_img>img{
+    height: 90px;
+}
+.sng_mugdhota_sub_menu_cnts>.msmc_cnt>h3{
+    font-weight: normal;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.sng_mugdhota_sub_menu_cnts>.msmc_cnt>p{
+    font-size: 14px;
+    color: #8a8787;
+}
+
+/* Overview Nav */
+
+.msmcs_section{
+    display: none;
+}
+.msmcs_section.active {
+    display: block;
+}
+
+/* End Main Manu Section */
+
+
+/* 
+    End Header Section 
+*/
+
+
+
+/* 
+    Content Section Style 'Overview'
+*/
+
+.wrapper_left{
+    width: 66.66%;
+    float: left;
+}
+.wrapper_right{
+    width: 33.33%;
+    float: right;
+}
+
+
+.mugdhota_content_nav{
+    display: block;
+    overflow: auto;
+}
+.mugdhota_content_nav>ul>li{
+    float: left;
+}
+.cnt_index{
+    padding: 5px;
+}
+.mugdhota_content_nav>ul>li>a{
+    display: block;
+    padding: 5px 15px;
+    color: black;
+}
+
+.mugdhota_cnts_left{
+    width: 50%;
+    float: left;
+}
+.mugdhota_cnts_right{
+    width: 50%;
+    float: left;
+}
+.mugdhota_cnts_left_section{
+    margin-right: 20px;
+}
+.mugdhota_cnts_right_section{
+    margin-left: 20px;
+}
+
+/* 
+    Content Section Style 'Overview'
+*/
