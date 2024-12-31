@@ -54,6 +54,14 @@ h2:hover{
     color: blue;
 }
 
+.content_title h2{
+    font-size: 20px;
+    padding: 18px 10px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-left: 4px solid red;
+}
+
 /* Header Section */
 
 #header{
@@ -230,97 +238,6 @@ h2:hover{
     End Header Section 
 */
 
-
-
-/* 
-    Content Section Style 'Overview'
-*/
-
-.wrapper_left{
-    width: 66.66%;
-    float: left;
-}
-.wrapper_right{
-    width: 33.33%;
-    float: right;
-}
-
-
-.mugdhota_content_nav{
-    display: block;
-    overflow: auto;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-left: 4px solid rgb(4, 188, 4);
-    margin-bottom: 30px;
-}
-.cnt_index{
-    padding: 5px 15px 5px 5px;
-    color: rgb(4, 188, 4);
-    font-weight: bold;
-    font-size: 18px;
-}
-.mugdhota_content_nav>ul>li{
-    float: left;
-}
-.mugdhota_content_nav>ul>li>a{
-    display: block;
-    font-size: 17px;
-    padding: 5px 10px;
-    color: black;
-}
-.mugdhota_content_nav>ul>li>a:hover{
-    color: rgb(4, 188, 4);
-}
-.cnt_view_all{
-    float: right !important;
-}
-.active_cnt_nav{
-    color: rgb(4, 188, 4) !important;
-}
-
-.mugdhota_cnts_left{
-    width: 50%;
-    float: left;
-}
-.mugdhota_cnts_right{
-    width: 50%;
-    float: left;
-}
-.sng_mugdhota_cnts_right{
-    align-items: flex-start;
-    margin-bottom: 15px;
-}
-
-.smcl_img>img{
-    width: 100%;
-    height: 215px;
-}
-
-.smcr_img{
-    width: 100px;
-    float: left;
-}
-.smcr_img img{
-    width: 100px;
-    height: 70px;
-}
-.smcr_cnt{
-    width: calc(100% - 100px);
-    display: inline-block;
-}
-.smcr_cnt h3{
-    font-weight: normal;
-}
-.smcr_cnt p{
-    font-size: 15px;
-    color: #7d7c7c;
-}
-
-/* 
-    Content Section Style 'Overview'
-*/
-
 /* 
     Slider
 */
@@ -372,7 +289,175 @@ button.slide_next {
     right: 10px;
 }
 
-
 /* 
    End Slider
+*/
+
+
+
+/* 
+    Content Section Style 'Overview'
+*/
+
+.wrapper_left{
+    width: 66.66%;
+    float: left;
+}
+.wrapper_right{
+    width: 33.33%;
+    float: right;
+}
+
+.mugdhota_content_nav{
+    display: block;
+    overflow: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-left: 4px solid rgb(4, 188, 4);
+    margin-bottom: 30px;
+}
+.cnt_index{
+    padding: 5px 15px 5px 5px;
+    color: rgb(4, 188, 4);
+    font-weight: bold;
+    font-size: 18px;
+}
+.mugdhota_content_nav>ul>li{
+    float: left;
+}
+.mugdhota_content_nav>ul>li>a{
+    display: block;
+    font-size: 17px;
+    padding: 5px 10px;
+    color: black;
+}
+.mugdhota_content_nav>ul>li>a:hover{
+    color: rgb(4, 188, 4);
+}
+.cnt_view_all{
+    float: right !important;
+}
+.active_cnt_nav{
+    color: rgb(4, 188, 4) !important;
+}
+
+.mugdhota_cnts_left{
+    width: 50%;
+    float: left;
+}
+.mugdhota_cnts_right{
+    width: 50%;
+    float: left;
+}
+.sng_mugdhota_cnts_right{
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.smcl_img>img{
+    width: 100%;
+    height: 200px;
+}
+
+.smcr_img{
+    width: 100px;
+    float: left;
+}
+.smcr_img img{
+    width: 100px;
+    height: 70px;
+}
+.smcr_cnt{
+    width: calc(100% - 100px);
+    display: inline-block;
+}
+.smcr_cnt h3{
+    font-weight: normal;
+}
+.smcr_cnt p{
+    font-size: 15px;
+    color: #7d7c7c;
+}
+
+/* Right Section */
+
+.sng_wrc{
+    display: flex;
+    margin-bottom: 30px;
+}
+.sng_wrc h2{
+    width: 35px;
+    height: 30px;
+    padding: 5px;
+    background: #6c6c6c;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 3px;
+    color: #fff;
+}
+.sng_wrc h3{
+    margin: -3px 0 0 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* 
+    Content Section Style 1 'Overview'
+*/
+
+
+/* 
+    Content Style 2 
+*/
+.mugdhota_content_style_2_section{
+    width: 50%;
+    float: left;
+}
+.sng_mcs2c{
+    display: flex;
+    margin-bottom: 25px;
+}
+.sng_mcs2c .sng_mcs2c_img{
+    width: 200px;
+    float: left;
+}
+.sng_mcs2c .sng_mcs2c_img img{
+    height: 110px;
+}
+.sng_mcs2c_img .cnt_des{
+    background-color: #eeeeee;
+    padding: 6px 4px 5px 10px;
+}
+.sng_mcs2c_img .cnt_des h4{
+    font-size: 16px;
+    margin: 0;
+}
+.sng_mcs2c_img .cnt_des p{
+    font-size: 15px;
+    color: #7e7d7d;
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+.sng_mcs2c .sng_mcs2c_cnt{
+    width: calc(100% - 200px);
+    float: right;
+    padding-left: 15px;
+}
+
+/* 
+    End Content Style 2 
+*/
+
+
+/* 
+    Contetn style 3 
+*/
+
+.mugdhota_cnt_style_3{
+    margin: 0 -20px 0 -20px;
+    overflow: auto;
+}
+
+/* 
+    Contetn style 3 
 */
