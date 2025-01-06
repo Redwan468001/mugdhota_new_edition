@@ -12,11 +12,12 @@
 
 
 *{margin:0;padding:0}
+
 ul{margin:0}
 li{list-style:none;padding:0 5px;}
 a{text-decoration:none;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';color:black;}
-h2{font-size:19px;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
-h3{font-size:18px;line-height: 1.3;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
+h2{font-size:19px;line-height:1.4;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
+h3{font-size:18px;line-height: 1.4;margin:0 0 10px 0;padding:0;color:black;font-weight:bold;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';transition:.2s all ease-in-out;}
 p{font-size:17px;font-weight:normal;line-height:1.4;color:black;font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';}
 a:hover{text-decoration: none;}
 img{width:100%;height: auto;display:block;text-indent: -9999px !important;}
@@ -25,11 +26,7 @@ img{width:100%;height: auto;display:block;text-indent: -9999px !important;}
 .h2s h2{margin:10px 0 15px 0}
 .no_pad{padding:0 !important}
 .no_mrg{margin:0 !important}
-.img_ha img{height:auto !important}
-.abh_description{font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';color:black;}
-input, button, select, textarea {
-  font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';font-size: inherit; line-height: inherit; padding: 5px;
-}
+
 .google-auto-placed{
     margin: 10px 0;
     padding: 5px;
@@ -43,11 +40,13 @@ body{
 
 .container_full{
     padding:20px 0 30px 0;
-	overflow: auto;
 }
 .container{
 	width: 1050px;
     padding: 0;
+}
+.mob{
+    display: none;
 }
 
 h2:hover{
@@ -220,6 +219,9 @@ h2:hover{
 .sng_mugdhota_sub_menu_cnts>.msmc_cnt>p{
     font-size: 14px;
     color: #8a8787;
+}
+#mob_manu_items{
+    display: none;
 }
 
 /* Overview Nav */
@@ -453,11 +455,148 @@ button.slide_next {
     Contetn style 3 
 */
 
+/* Left Section */
 .mugdhota_cnt_style_3{
     margin: 0 -20px 0 -20px;
     overflow: auto;
 }
 
+/* Right Section */
+.sng_wrc_sec2{
+    margin-bottom: 35px;
+}
+.sng_wrc_sec2 .sng_wrc2 h2{
+    font-size: 16px;
+}
+.sng_wrc_sec2 .sng_wrc2 h3{
+    font-size: 14px;
+    color: #838282;
+}
+.sng_wrc_sec2 .sng_wrc2 p{
+    font-size: 14px;
+    color: #6c6c6c;
+    margin-bottom: 2px;
+}
+.sng_wrc_sec2 .sng_wrc2 .sng_wrc2_author{
+    font-size: 14px;
+    color: #0b0b0b !important;
+}
+
+
 /* 
     Contetn style 3 
+*/
+
+
+/* 
+    Single Page
+*/
+
+.single_cnt_title h2{
+    font-size: 20px;
+    padding: 10px 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-left: 4px solid rgb(105, 104, 104);
+}
+
+.single_page_cnt_description{
+    display: block;
+    margin: 0 0 30px 0;
+}
+.spcd h3{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.spcd h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.spcd .content_info{
+    display: flex;
+}
+.spcd .content_info p{
+    font-size: 14px;
+    color: #6c6c6c;
+    padding-right: 25px;
+}
+
+.spc_img{
+    margin-bottom: 30px;
+}
+.spc_cnt p{
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Single Page Right Section */
+.category ul li a{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+.single_page_category{
+    margin-bottom: 45px;
+}
+
+/* Category and Tag section */
+.single_page_tags{
+    display: flex-start;
+}
+.single_page_tags a{
+    display: inline-block;
+    font-size: 17px;
+    padding: 8px 15px;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    margin: 0 15px 15px 0;
+}
+.single_page_tags a:hover{
+    color: #33e07b;
+    border: 1px solid #33e07b;
+    transition: .2s all ease-in-out;
+}
+
+/* Related content */
+.single_page_cnt_img>img{
+    height: 150px;
+}
+
+/* 
+    End Single Page
+*/
+
+
+/* 
+    Page
+*/
+
+.page_info{
+    margin-bottom: 35px;
+}
+.page_title h2{
+    font-size: 30px;
+}
+.page_left_section{
+    width: 100%;
+    display: inline-block;
+}
+
+.pi_sng_category a{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+}
+.pi_sng_category a i{
+    font-size: 12px;
+}
+
+/* 
+    End Page
 */

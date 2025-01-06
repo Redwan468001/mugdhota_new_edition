@@ -1,3 +1,44 @@
+
+input, button, select, textarea {
+  font-family: 'Kalpurush', 'Bangla', 'Baloo Da 2';font-size: inherit; line-height: inherit; padding: 5px;
+}
+
+.flex{
+    display: flex;
+}
+
+/* Width */
+.wrapper_20{
+    width: 20%;
+}
+.wrapper_25{
+    width: 25%;
+}
+.wrapper_33{
+    width: 33.33%;
+}
+.wrapper_40{
+    width: 40%;
+}
+.wrapper_50{
+    width: 50%;
+}
+.wrapper_60{
+    width: 60%;
+}
+.wrapper_66{
+    width: 66.66%;
+}
+.wrapper_70{
+    width: 70%;
+}
+.wrapper_80{
+    width: 80%;
+}
+.wrapper_100{
+    width: 100%;
+}
+
 /* Padding */
 .no_pad{
     margin: 0;
@@ -146,4 +187,14 @@
 }
 .mr_right_35{
     margin-right: 35px;
+}
+
+.mr_top_-20{
+    margin-top: -20px;
+}
+.mr_left_-20{
+    margin-left: -20px;
+}
+.mr_right_-20{
+    margin-right: -20px;
 }
